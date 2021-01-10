@@ -32,62 +32,65 @@
     </nav>
 
     </div>
+
     <div class="alert alert-success" role="alert">
         <h4 class="alert-heading">Bienvenido a la version Beta de Control!</h4>
     </div>
     <hr>
-    <h2 id="listadoMP">Listado de Materias Primas</h2>
-    <hr>
-    <input type="search" placeholder="Buscar" class="input" id="buscar">
-    <input type="submit" value="Ok" class="btn btn-primary" id="btnBuscar">
-    <div>
-        <div class="card">
-            <form class="card-body" id="formulario" style="display: none;">
 
-                <input type="text" class="form-control" id="item" placeholder="Materia prima">
+    <div class="container">
+        <h2 id="listadoMP">Listado de Materias Primas</h2>
+        <hr>
+        <input type="search" placeholder="Buscar" class="input" id="buscar">
+        <input type="submit" value="Ok" class="btn btn-primary" id="btnBuscar">
+        <div>
+            <div class="card">
+                <form class="card-body" id="formulario" style="display: none;">
 
-                <input type="text" class="form-control" id="proveedor" placeholder="Proveedor">
+                    <input type="text" class="form-control" id="item" placeholder="Materia prima">
 
-                <input type="text" class="form-control" id="lote" placeholder="Lote">
+                    <input type="text" class="form-control" id="proveedor" placeholder="Proveedor">
 
-                <input id="retest" type="date" class="form-control">
-                <select id="unidad" class="form-control">
+                    <input type="text" class="form-control" id="lote" placeholder="Lote">
+
+                    <input id="retest" type="date" class="form-control">
+                    <select id="unidad" class="form-control">
                         <option value="ML">ML</option>
                         <option value="GR">GR</option>
                         <option value="KG">KG</option>
                         <option value="LT">LT</option>
                       </select>
 
-                <input type="number" id="stock" placeholder="Stock" class="form-control">
-                <input id="limpiar" type="button" class="btn btn-seccundary" value="Limpiar">
-                <input type="button" value="Editar" style="display: none;" class="btn btn-warning" id="modificar">
+                    <input type="number" id="stock" placeholder="Stock" class="form-control">
+                    <input id="limpiar" type="button" class="btn btn-seccundary" value="Limpiar">
+                    <input type="button" value="Editar" style="display: none;" class="btn btn-warning" id="modificar">
 
-            </form>
+                </form>
+            </div>
         </div>
+        <div>
+
+        </div>
+
+        <table id="tabla" class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Proveedor</th>
+                    <th>Lote</th>
+                    <th>Fecha de Vencimiento</th>
+                    <th>Unidad</th>
+                    <th>Stock</th>
+
+                </tr>
+
+
+            </thead>
+            <tbody id="resultado">
+                <tr></tr>
+            </tbody>
+        </table>
     </div>
-    <div>
-
-    </div>
-
-    <table id="tabla" class="table">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Proveedor</th>
-                <th>Lote</th>
-                <th>Fecha de Vencimiento</th>
-                <th>Unidad</th>
-                <th>Stock</th>
-
-            </tr>
-
-
-        </thead>
-        <tbody id="resultado">
-            <tr></tr>
-        </tbody>
-    </table>
-
     <footer class="page-footer font-small blue">
 
         <!-- Copyright -->

@@ -11,7 +11,7 @@ let data;
 function borrarMateria(id) {
     console.log(id);
     if (confirm('¿Estas seguro que deseas eliminar la materia prima?')) {
-        axios.delete(`http://localhost:3000/borrar/${id}`)
+        axios.delete(`https://servidor-bodega.herokuapp.com/borrar/${id}`)
             .then(res => {
 
                 alert(res.data.mensaje)
@@ -25,7 +25,7 @@ function borrarMateria(id) {
 
 function getData() {
 
-    axios.get('http://localhost:3000/entrada').then((result) => {
+    axios.get('https://servidor-bodega.herokuapp.com/entrada').then((result) => {
         data = result.data
         let color = ""
         for (let dato of data) {
@@ -65,7 +65,7 @@ btnES.addEventListener('click', function(e) {
     if (!item2.value || item2.value === undefined || item2.value === null) {
         return alert('DEBER INGRESAR NOMBRE OBLIGATORIAMENTE')
     }
-    axios.post('http://localhost:3000/entrada', {
+    axios.post('http://servidor-bodega.herokuapp.com/entrada', {
             nombre: item2.value,
             fecha: fecha.value,
             unidad: unidad2.value,

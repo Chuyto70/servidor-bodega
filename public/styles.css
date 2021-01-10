@@ -1,0 +1,70 @@
+body {
+    transition: 3000ms;
+    display: block;
+    width: 100%;
+}
+
+#formulario {
+    width: 30em;
+    margin-left: 27%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#listadoMP {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#buscar {
+    border-radius: 20px;
+    padding: 7px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#titulo2 {
+    display: flex;
+    justify-content: center;
+}
+
+table,
+th {
+    border: 1px solid black;
+}
+
+th {
+    padding: 5px;
+    margin: 5px;
+}
+
+#editar,
+#borrar {
+    padding: 3px;
+    display: none;
+}
+
+#paraEditar:hover #editar {
+    display: inline;
+}
+
+#paraEditar:hover #borrar {
+    transition: 10000ms;
+    display: inline;
+}
+
+#bienvenida {
+    margin-bottom: 30rem;
+    margin-left: 27%;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 0px;
+}

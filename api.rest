@@ -1,0 +1,45 @@
+###
+POST http://localhost:3000/nuevaMateria
+Content-Type: application/json
+
+{
+    "nombre": "Goma xantan",
+    "proveedor": "Proquimsa",
+    "retest":"12-05-2022",
+    "lote": 1123311,
+    "unidad": "ML",
+    "stock": 500
+}
+###
+POST http://localhost:3000/entrada
+Content-Type: application/json
+
+{
+    "nombre": "aDSads",
+    "unidad": "adSML",
+    "stock": 1234,
+    "fecha": "12-12-2022"
+}
+
+###
+PUT  http://localhost:3000/5fb0456285bcd832bc28522e
+Content-Type: application/json
+
+{
+    "nombre": "Finasteride",
+    "proveedor": "Reutter",
+    "retest":"01-02-2023",
+    "lote": 558479,
+    "unidad": "GR",
+    "stock": 120
+}
+
+
+### MATERIAS PRIMAS
+GET http://localhost:3000/entrada/
+
+### MATERIA PRIMA
+GET http://localhost:3000/listado/5fb0454285bcd832bc28522d
+
+###
+DELETE  http://localhost:3000/5fb0442c1e9ae93254f9e880

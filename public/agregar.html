@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bodega</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./bienvenido.html">Control Bodega</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Listado MP <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./agregar.html">Agregar MP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./control.html">Entrada y Salida</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h2 id="titulo2">Ingresar Materia Prima</h2>
+    <div class="container">
+        <form class="card-body" id="formulario">
+
+            <input type="text" class="form-control" id="item" placeholder="Materia prima">
+
+
+            <input type="text" class="form-control" id="proveedor" placeholder="Proveedor">
+
+            <input type="text" class="form-control" id="lote" placeholder="Lote">
+
+
+            <input id="retest" type="date" class="form-control">
+            <select id="unidad" class="form-control">
+            <option value="ML">ML</option>
+            <option value="GR">GR</option>
+            <option value="KG">KG</option>
+            <option value="LT">LT</option>
+          </select>
+
+            <input type="number" id="stock" placeholder="Stock" class="form-control">
+
+            <input id="agregar" type="submit" class="btn btn-primary" value="Agregar">
+            <input id="limpiar" type="button" class="btn btn-seccundary" value="Limpiar">
+            <input type="button" value="Editar" style="display: none;" class="btn btn-warning" id="modificar">
+
+        </form>
+    </div>
+    </div>
+    </div>
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© Desarrollado por: Jesus Hurtado
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="moment.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
